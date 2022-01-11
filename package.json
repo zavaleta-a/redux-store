@@ -17,7 +17,10 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.7",
+    "@apollo/react-hooks": "^4.0.0",
     "apollo-boost": "^0.4.9",
+    "nodemon": "^2.0.15",
     "react-redux": "^7.2.6"
   }
 }
