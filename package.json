@@ -27,6 +27,6 @@
     "apollo-boost": "^0.4.9",
     "nodemon": "^2.0.15",
     "react-redux": "^7.2.6",
-    "concurrently": "^5.1.0"
+    "concurrently": "^7.0.0"
   }
 }
