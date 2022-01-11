@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { Provider } from "react-redux";
-import store from "./utils/store";
+import ShopProvider from "./utils/shopContext";
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -56,7 +56,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Provider store={store}>
+          <ShopProvider>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -67,7 +67,7 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
             </Switch>
-          </Provider>
+          </ShopProvider>
         </div>
       </Router>
     </ApolloProvider>
